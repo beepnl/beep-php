@@ -12,6 +12,7 @@ RUN set -eux; \
     docker-php-ext-install -j$(nproc) \
         intl \
         pdo_mysql \
+        bcmath \
     ; \
     pecl install \
         apcu \
